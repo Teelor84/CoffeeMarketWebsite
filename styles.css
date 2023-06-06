@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+body {
+}
+
+.navbar {
+  height: 5rem;
+  background: rgb(54, 69, 79);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.title {
+  color: white;
+  padding-left: 10vw;
+}
+
+.section {
+  min-height: calc(100vh - 5rem);
+  background: rgb(105, 62, 27);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    background: linear-gradient(
+        to right,
+        rgba(105, 62, 27, 0.5),
+        rgba(105, 62, 27, 1)
+      ),
+      url("./hero-bcg.jpg") center/cover;
+    min-height: calc(100vh - 5rem);
+  }
+}
+.sectioncenter {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.section .markettitle {
+  color: white;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 10vh;
+  padding-left: 10vh;
+}
+.section .text {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  max-width: 35rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.section .exploremorebtn {
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-left: 10vh;
+  border: white solid;
+  background: transparent;
+  padding: 0.75rem 1.25rem;
+}
+
+.temp {
+  min-height: 100vh;
+  background: red;
+}
